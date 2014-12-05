@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <title>Example chat</title>
+    <meta name="description" content="Simple chat for two users">
+    <meta name="keywords" content="chat, server, nodejs, static, socket, io">
+    <link rel="stylesheet" type="text/css" href="stylesheets/chat.css">
+    <script src="javascripts/jquery-2.1.1.js"></script>
+    <script src="javascripts/index.js"></script>
+    <script src="javascripts/validate.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <header class="chatHeader">
+      <svg id="chatHeader" height="120" width="254">
+        <text x="0" y="50" fill="#4B0082">My purple chat
+        <tspan x="40" y="100" fill="#8B2252">Let's chat!</tspan>
+        </text>
+  </text>
+        Sorry, your browser does not support inline SVG.
+      </svg>
+    </header>
+    <article>
+    <section id="login"> 
+      <form>
+        <ul>
+          <li class="room">
+            <label for="room" > Add room name </label>
+            <input type="text" name="chatRoom" id="room" value="" autocomplete="off" pattern=".{1,25}" required title="must be between 5 and 25 characters">
+          </li>
+          <li class="nickname">
+            <label for="nickname"> Add your nickname</label>
+            <input type="text" name"nickname" id="nickname" value="" autocomplete="off" pattern=".{5,10}" required title="must be between 5 and 10 characters">
+          </li>
+          <li class="joinChat">
+          <button id="joinChat">Login</button> 
+          </li>
+        </ul>  
+      </form>
+    </section>
+    <section id="updates"></section>
+    <section class="chat-messages">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" 
+        id="svgStar" x="0px" y="0px" width="35px" height="25px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+        <path  xmlns="http://www.w3.org/2000/svg" id="star" d="M 118.000 138.000
+          L 141.511 150.361
+          L 137.021 124.180
+          L 156.042 105.639
+          L 129.756 101.820
+          L 118.000 78.000
+          L 106.244 101.820
+          L 79.958 105.639
+          L 98.979 124.180
+          L 94.489 150.361
+          L 118.000 138.000
+          "fill= "#A74CAB", stroke= "#A74CAB", stroke-width= "2" ><metadata>&lt;xvg:star cx='300' cy='250' r='80' r2='40' orient='point' points='5' radial-shift='-0.5' outerCurve='80' outerOffset='1.1' innerCurve='60' innerOffset='1.4' /&gt;</metadata></path>
+      </svg>
+      <ul id="messages"></ul>
+    </section>
+    <section class="message-input">
+      <input id="m" autocomplete="off"/>
+      <button id="send_msg">Send</button>
+    </section>
+    <aside class="members">
+      <ul id="members"></ul>
+    </aside>
+  </article>
+  </body>
+</html>

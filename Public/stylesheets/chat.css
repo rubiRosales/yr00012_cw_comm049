@@ -1,0 +1,300 @@
+@font-face{
+
+      font-family: Kaushan;
+      src: url('fonts/KaushanScript-Regular.otf') format('opentype');
+}
+     
+     body { 
+            width: 100%;
+      	font: 13px Helvetica, Arial; 
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            background-color: #FFE1FF; /*light purple*/
+      }
+
+      header{
+            font-family: Kaushan;
+            font-size: 40px;
+            text-align: center;
+
+      }
+
+      #chatSubHeader{
+            font-size: 30px;
+      }
+
+      ul{
+            text-align: center;
+            padding: 10px;
+      }
+      li {
+            display: block;
+      }
+
+      label{
+
+            color: #EED2EE;
+            font-size: 200%;
+            font-weight: 100;
+            margin-bottom: 200px;
+ 
+      }
+
+      .nickname{
+            padding-top: 60px;
+      }
+
+      #room, #nickname {
+            background-color: transparent;
+            color: #FDF8FF;
+            border: none;
+            border-bottom: 2px solid #EED2EE;
+            outline: none;
+            padding-top: 15px;
+            text-align: center;
+            letter-spacing: 3px;
+            font-size: 150%;
+            width: 80%;
+            }
+
+      .joinChat{
+            padding-top: 60px;
+      }      
+
+      #joinChat{
+
+            -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+            box-shadow:inset 0px 1px 0px 0px #ffffff;
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
+            background:-moz-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+            background:-webkit-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+            background:-o-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+            background:-ms-linear-gradient(top, #ededed 5%, #dfdfdf 100%);
+            background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf',GradientType=0);
+            background-color:#ededed;
+            -moz-border-radius:6px;
+            -webkit-border-radius:6px;
+            border-radius:6px;
+            border:1px solid #dcdcdc;
+            display:inline-block;
+            cursor:pointer;
+            color:#777777;
+            font-size:23px;
+            font-weight:bold;
+            padding:17px 55px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #ffffff;
+      }
+      #joinChat:hover {
+            background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed));
+            background:-moz-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+            background:-webkit-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+            background:-o-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+            background:-ms-linear-gradient(top, #dfdfdf 5%, #ededed 100%);
+            background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed',GradientType=0);
+            background-color:#dfdfdf;
+      }
+      #joinChat:active {
+            position:relative;
+            top:1px;
+      }
+
+       #login, .chat-messages, .message-input, #updates{
+            
+            width: 60%;
+      }
+
+      #login{
+            height: 400px;
+            padding-top: 80px;
+            border-radius: 20px;
+            margin-left: 20%;
+            margin-right: 50%;
+            background-color: #000000;
+
+      }
+      .chat-messages, .message-input, #updates{
+            
+            background-color: #D8BFD8;
+            margin-left: 10%;
+            margin-right: 60%;
+      
+      }
+
+      .members{
+            background-color: #D8BFD8;
+            width: 20%;
+            margin-left: 75%;
+            margin-top: -350px;
+            height:200px;
+            border-radius: 20px;
+
+      }
+      #members{
+            padding-top: 20px;
+            font-size: 30px;
+            color: #4B0082;
+      }
+      .chat-messages{
+            overflow: scroll;
+            height: 340px;
+      }
+
+      .message-input{
+            height: 60px;
+           /* padding-top: 0px;*/
+            margin-top: 0px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+      }
+      .message-input input {
+            font-family: Arial; 
+      	border: none; 
+      	width: 70%; 
+      	margin-left: 15%; 
+            height: 30px;
+            border: 2px solid #2E0854;
+            outline: none;
+            background-color: transparent;
+      }
+      .message-input button { 
+      	width: 75px; 
+      	background: #2E0854; 
+      	border: none; 
+            margin-left:-80px;
+            height: 55%;
+            color: #fff;
+
+      }
+
+      #updates{
+            padding-top:10px;
+            display: block;
+            text-align: center;
+            color: #8B7B8B;
+            height:30px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+
+      }
+
+      #send_msg:hover{
+            background-color: #FFE1FF;
+            color: #000000;
+      }
+
+      .notification{
+
+            transition: all 1s linear;
+      }
+
+      #messages { 
+      	list-style-type: none; 
+            text-align: left;
+            overflow: scroll;
+      	/*padding-top: 300px;*/ 
+      }
+      
+      .receivedNick{
+            /*font-family: ;*/
+            color: #91219E;
+
+      }
+      /*animation on the icon in messages */
+      #star{
+      /*position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 120px;
+      height: 120px;
+      margin:-60px 0 0 -60px;*/
+      -webkit-animation:spin 4s linear;
+      -moz-animation:spin 4s linear;
+      animation:spin 4s linear;
+      -webkit-transform-origin: 50% 50%;
+      -moz-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      }
+
+      @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+      @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+      @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+      
+      /* media for table*/
+      @media screen and (min-width: 500px) and (max-width: 1000px){
+            header{
+                  
+                  padding-top: 5px;
+                  padding-bottom: 5px;
+            }
+      }
+
+      /*media for phones*/
+      @media screen and (max-width: 500px){
+
+            header{
+                  font-size: 30px;
+                  color: #2E0854;
+                  padding-top: 5px;
+                  padding-bottom: 5px;
+            }
+            #login{
+                  margin: 50px;
+                  height: 300px;
+            }
+
+            #login{
+            
+            width: 300px;
+            
+            }
+            .chat-messages{
+                  height: 250px;
+            }
+            .message-input{
+                  height: 50px;
+            }
+
+            .nickname{
+            padding-top: 30px;
+             }
+
+            #room, #nickname {
+            
+                  width: 100%;
+            }
+            .joinChat{
+             padding-top: 20px;
+            }      
+
+             #joinChat{
+              font-size:13px;
+                   padding:9px 26px;
+            }
+            #messages { 
+            list-style-type: none; 
+            /*padding-top: 200px;*/ 
+      }
+            .message-input input {
+                  width: 80%; 
+                  margin-left: 5%;
+                  border: none;
+                  border-top: 2px solid #2E0854;
+            }
+            .message-input button{
+                  width: none; 
+                  height: 34px;
+                  margin-left: -79px;
+                  
+            }
+            #members{
+                  padding-top: 50px;
+                  font-size: 20px;
+                  overflow: hidden;
+            }
+      }
